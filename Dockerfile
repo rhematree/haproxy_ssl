@@ -7,6 +7,6 @@ COPY run_haproxy.sh /etc/haproxy/run_haproxy.sh
 RUN chmod +x /etc/haproxy/run_haproxy.sh
 COPY haproxy /etc/default/haproxy
 # Define default command.
-EXPOSE 80
+EXPOSE 443
 CMD ["/etc/haproxy/run_haproxy.sh"]
 #WORKDIR /etc/haproxy
